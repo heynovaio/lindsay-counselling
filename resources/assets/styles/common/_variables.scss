@@ -8,3 +8,23 @@ $theme-colors: (
 /** Bootstrap navbar fix (https://git.io/fADqW) */
 $navbar-dark-toggler-icon-bg: none;
 $navbar-light-toggler-icon-bg: none;
+
+// Color Variables
+$text-color: #074869;
+$brandBlue: #bbdce1;
+$brandPink: #ffdfd5;
+$brandGreen: #d6e5e3;
+$brandLightGreen: #f2f7f7;
+$brandCTA: #209da8;
+$lightText: #fff;
+
+// Breakpoints
+$bp-narrow: "(min-width: 400px)";
+$bp-mid: "(min-width: 740px)";
+$bp-wide: "(min-width: 1200px)";
+
+$xxs: 377px;
+$xs:  480px;
+$sm:  768px;
+$md:  992px;
+$lrg: 1200px;

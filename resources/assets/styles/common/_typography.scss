@@ -1,0 +1,31 @@
+// type
+$body-font: Raleway-Regular, sans-serif;
+$sub-heading-font: Raleway-Medium, sans-serif;
+$heading-font: Futura-Medium, sans-serif;
+$semibold-font: Raleway-Semibold, sans-serif;
+$bold-font: Raleway-Bold, sans-serif;
+
+h1 {
+  font-family: $heading-font;
+  color: $text-color;
+  line-height: 1.26;
+  letter-spacing: 0.8px;
+}
+
+h2 {
+  font-family: $heading-font;
+  color: $text-color;
+  font-size: 25px;
+  line-height: 1.88;
+  letter-spacing: 0.7px;
+}
+
+h3 {
+  font-family: $semibold-font;
+  color: $text-color;
+}
+
+p {
+  font-family: $body-font;
+  color: $text-color;
+}
