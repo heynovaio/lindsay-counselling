@@ -1,58 +1,73 @@
 @extends('layouts.app')
 
-@section('content')
-  @include('partials.page-header')
+<div class="above-the-fold">
+  <div class="pink"></div>
+  @section('content')
+    @include('partials.page-header')
 
-<section class="above-the-fold">
-    <div class="heading-text">
-      <h3>Councellor and Parenting Coach</h3>
-      <h1>Creating Calm Within the Chaos</h1>
-      <p>Healping parents, caregivers, and service providers stay calm, connected and in control</p>
-      <div class="btn">Book a Free Consult</div>
-    </div>
-    <img class="hummingbird" src="../../assets/images/hummingbird.png" alt="watercolour painting of hummingbird">
-    <div class="side-nav">
-      <h3>Counselling Services</h3>
-      <ul>
-        <li>Parents  ></li>
-        <li>Caregivers  ></li>
-        <li>Service Providers  ></li>
-        <li>Indigenous Resources  ></li>
-      </ul>
-    </div>
-</section>
 
-<section>
-  <div class="what-section">
-    <div class="">
+  <section class="hero">
+    <div class="grid">
+      <div class="heading-text grid-item">
+        <h3>Councellor and Parenting Coach</h3>
+        <h1>Creating Calm Within the Chaos</h1>
+        <p>Healping parents, caregivers, and service providers stay calm, connected and in control</p>
+        <div class="btn">Book a Free Consult</div>
+      </div>
+      <div class="grid-item">
+        <img class="hummingbird" src="../../assets/images/hummingbird.png" alt="watercolour painting of hummingbird">
+      </div>
+      <div class="side-nav grid-item">
+        <h3>Counselling Services</h3>
+        <ul>
+          <li>Parents  ></li>
+          <li>Caregivers  ></li>
+          <li>Service Providers  ></li>
+          <li>Indigenous Resources  ></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</div>
+
+<section class="what-section">
+  <div class="flowers">
+    <div class="grid">
       <div class="box-container">
         <h2>Conselling for</h2>
         <h3>Parents, Cargivers, and Service Providers</h3>
         <p> Lindsay Trowell Counselling is a private practice that utilizes a multi-cultural, person-centered approach to counselling and coaching.  Every session is tailored to your individual experiences and desired outcomes.</p>
         <div class="btn">See all Services</div>
       </div>
-
     </div>
-
   </div>
 </section>
 
 <section class="how-section">
   <div class="">
-    <h2>I can Help</h2>
-    <p>I provide a safe and relaxing space for families, caregivers, and service providers to establish a supportive and trusting therapeutic relationship.</p>
-    <p>My counseling approach is person-centered; a non-authoritative approach that allows my clients to take the lead and discover their own solutions. I act as a compassionate facilitator, listening without judgement and provide encouraging support.</p>
-    <div class="btn">Book a Free Consultation</div>
+    <div class="grid">
+      <div class="box-container">
+        <h2>I can Help</h2>
+        <p>I provide a safe and relaxing space for families, caregivers, and service providers to establish a supportive and trusting therapeutic relationship.</p>
+        <p>My counseling approach is person-centered; a non-authoritative approach that allows my clients to take the lead and discover their own solutions. I act as a compassionate facilitator, listening without judgement and provide encouraging support.</p>
+        <div class="btn">Book a Free Consultation</div>
+      </div>
+
+    </div>
   </div>
+
 </section>
 
 <section class="services-section">
-  <div class="">
-    <h2>Counselling Services</h2>
-    <p>I provide a safe and relaxing place for children, adults, caregivers, and service providers.</p>
+  <div class="grid">
+    <div class="services-heading">
+      <h2>Counselling Services</h2>
+      <p>I provide a safe and relaxing place for children, adults, caregivers, and service providers.</p>
+    </div>
+  </div>
 
-    <div class="grid boxes-container">
-      <div class="services-box">
+   <div class="grid services-grid">
+      <div class="services-box box-1">
         <h3>Caregivers</h3>
         <ul>
           <li>Of individuals with developmental disabilities</li>
@@ -63,7 +78,7 @@
         <div class="btn">Learn More</div>
       </div>
 
-      <div class="services-box">
+      <div class="services-box box-2">
         <h3>Caregivers</h3>
         <ul>
           <li>Of individuals with developmental disabilities</li>
@@ -74,7 +89,7 @@
         <div class="btn">Learn More</div>
       </div>
 
-      <div class="services-box">
+      <div class="services-box box-3">
         <h3>Caregivers</h3>
         <ul>
           <li>Of individuals with developmental disabilities</li>
@@ -85,7 +100,7 @@
         <div class="btn">Learn More</div>
       </div>
 
-      <div class="services-box">
+      <div class="services-box box-4">
         <h3>Caregivers</h3>
         <ul>
           <li>Of individuals with developmental disabilities</li>
@@ -97,7 +112,6 @@
       </div>
 
     </div>
-  </div>
 </section>
 
 <section class="about-section">
