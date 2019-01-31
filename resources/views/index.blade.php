@@ -141,7 +141,7 @@
         </div>
       </div>
 
-      <div class="grid">
+      <div class="grid contact-info">
         <img src="../assets/images/feather.png" alt="">
         <div class="form-container">
           <form class="" action="index.html" method="post">
@@ -156,19 +156,19 @@
         </div>
 
         <div class="contact-info-container">
-          <div class="contact-icon">
-            <img src="" alt="">
+          <div class="contact-details">
+            <i class="fas fa-map-marker-alt"></i>
             <p>385 Noah Place Suite 878</p>
           </div>
-          <div class="">
-            <img src="" alt="">
+          <div class="contact-details">
+            <i class="fas fa-phone"></i>
             <p>877-255-7945</p>
           </div>
-          <div class="">
-            <img src="" alt="">
+          <div class="contact-details">
+            <i class="fas fa-envelope"></i>
             <p>info@form.com</p>
           </div>
-          <div class="btn"><img class="download-icon"src="" alt="">Download intake form</div>
+          <div class="btn"><i class="fas fa-download"></i>Download intake form</div>
 
         </div>
 

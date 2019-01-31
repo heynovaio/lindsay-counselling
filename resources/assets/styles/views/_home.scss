@@ -2,7 +2,6 @@
 
 // above-the-fold
 .above-the-fold {
-  max-height: 1329px;
   border-radius: 4px;
   box-shadow: -3px 6px 20px 0 rgba(156, 158, 157, 0.4);
   background-image: radial-gradient(circle at 22% 27%, rgba(158, 193, 189, 0.18), #bbdce1);
@@ -11,6 +10,10 @@
   margin: 0;
   position: absolute;
   z-index: 1;
+
+  @media (min-width: $sm) {
+    min-height: 700px;
+  }
 
   /*
   .pink {
@@ -29,40 +32,51 @@
 
 .hero {
   @media (min-width: $sm) {
-    margin-top: 150px;
+    margin-top: 120px;
+    margin-left: 100px;
+  }
+
+  .grid {
+    justify-content: space-between;
   }
 
   h3 {
     text-transform: uppercase;
     font-size: 18px;
     letter-spacing: 0.6px;
+    margin-bottom: 10px;
   }
 
   .heading-text {
     max-width: 518px;
-  }
-}
 
-//contact @section
-.contact-section {
-  margin-top: 91px;
+    p {
+      font-size: 22px;
+      margin-top: 14px;
+    }
 
-  .text-container {
-    text-align: center;
-    max-width: 558px;
-
-    h2 {
-      font-size: 36px;
+    .btn {
+      margin-top: 33px;
     }
   }
 
-  .form-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    max-width: 475px;
-    margin-right: 102px;
+  .side-nav {
+    margin-right: 12px;
+
+    h3 {
+      font-size: 24px;
+      font-family: $semibold-font;
+    }
+
+    li {
+      list-style: none;
+      padding-top: 53px;
+      text-align: right;
+      font-size: 20px;
+      color: $text-color;
+      font-family: $sub-heading-font;
+      letter-spacing: 0.8px;
+    }
   }
 }
 
@@ -110,12 +124,17 @@
   }
 
   .box-container {
-    max-width: 610px;
+    max-width: 700px;
     text-align: center;
 
     h2 {
       margin-bottom: 28px;
       font-size: 38px;
+    }
+
+    p {
+      font-size: 20px;
+      margin-bottom: 20px;
     }
 
     .btn {
@@ -149,8 +168,113 @@
       font-size: 30px;
     }
 
+    p {
+      font-size: 20px;
+    }
+
     .btn {
       margin-top: 25px;
+    }
+  }
+}
+
+//contact @section
+.contact-section {
+  margin-top: 91px;
+
+  .contact-info {
+    margin-top: 23px;
+  }
+
+  .text-container {
+    text-align: center;
+    max-width: 558px;
+
+    h2 {
+      font-size: 36px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
+
+  .form-container {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    max-width: 455px;
+    margin-right: 102px;
+    width: 33.3%;
+
+    form {
+      margin-bottom: 0;
+
+      label {
+        margin-top: 16px;
+        color: $text-color;
+        font-family: $semibold-font;
+        text-transform: uppercase;
+        font-size: 18px;
+      }
+
+      textarea {
+        width: 100%;
+        border: 1px solid #487e81;
+        border-radius: 2px;
+        resize: none;
+        min-height: 96px;
+      }
+
+      input {
+        width: 100%;
+        border-radius: 2px;
+        border: 1px solid #487e81;
+        min-height: 46px;
+      }
+    }
+
+    .btn {
+      margin-top: 31px;
+      width: 100%;
+      border-style: none;
+    }
+  }
+
+  .contact-info-container {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 33.3%;
+    max-width: 455px;
+
+    .contact-details {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      flex-direction: row;
+      margin-bottom: 50px;
+
+      p {
+        font-size: 24px;
+      }
+
+      i {
+        margin-right: 21px;
+        color: #074869;
+      }
+    }
+
+    .btn {
+      width: 100%;
+      background-color: $text-color;
+
+      i {
+        color: #fff;
+        margin-right: 20px;
+      }
     }
   }
 }
@@ -175,6 +299,10 @@
       h2 {
         font-size: 38px;
       }
+
+      p {
+        font-size: 20px;
+      }
     }
   }
 
@@ -185,11 +313,14 @@
 
     .services-box {
       max-width: 400px;
-      max-height: 312px;
       border-radius: 4px;
       box-shadow: -5px 6px 16px 0 rgba(120, 120, 120, 0.34);
       padding: 20px 25px;
       margin-left: 21px;
+
+      h3 {
+        font-size: 26px;
+      }
     }
 
     .box-1 {
