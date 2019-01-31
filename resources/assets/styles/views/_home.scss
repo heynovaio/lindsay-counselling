@@ -43,6 +43,29 @@
   }
 }
 
+//contact @section
+.contact-section {
+  margin-top: 91px;
+
+  .text-container {
+    text-align: center;
+    max-width: 558px;
+
+    h2 {
+      font-size: 36px;
+    }
+  }
+
+  .form-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    max-width: 475px;
+    margin-right: 102px;
+  }
+}
+
 // what-section
 .what-section {
   margin-top: 72px;
@@ -101,6 +124,37 @@
   }
 }
 
+// About section
+.about-section {
+  margin-top: 174px;
+
+  .about-img {
+    /* placeholder styling */
+    width: 456px;
+    height: 449px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.34);
+    background-color: #d8d8d8;
+  }
+
+  .text-container {
+    text-align: center;
+    max-width: 500px;
+
+    @media (min-width: $sm) {
+      margin-left: 149px;
+    }
+
+    h2 {
+      margin-bottom: 25px;
+      font-size: 30px;
+    }
+
+    .btn {
+      margin-top: 25px;
+    }
+  }
+}
+
 // counselling services @section
 .services-section {
   margin-top: 183px;
@@ -111,7 +165,7 @@
     justify-content: center;
 
     @media (min-width: $sm) {
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
     }
 
     .services-heading {
@@ -126,7 +180,7 @@
 
   .services-grid {
     @media (min-width: $sm) {
-      margin: 0 100px;
+      margin: 0 50px;
     }
 
     .services-box {
@@ -134,7 +188,7 @@
       max-height: 312px;
       border-radius: 4px;
       box-shadow: -5px 6px 16px 0 rgba(120, 120, 120, 0.34);
-      padding: 35px 40px;
+      padding: 20px 25px;
       margin-left: 21px;
     }
 

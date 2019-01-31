@@ -15,7 +15,7 @@
         <div class="btn">Book a Free Consult</div>
       </div>
       <div class="grid-item">
-        <img class="hummingbird" src="../../assets/images/hummingbird.png" alt="watercolour painting of hummingbird">
+        <img class="hummingbird" src="../assets/images/hummingbird.png" alt="watercolour painting of hummingbird">
       </div>
       <div class="side-nav grid-item">
         <h3>Counselling Services</h3>
@@ -115,7 +115,7 @@
 </section>
 
 <section class="about-section">
-  <div class="">
+  <div class="grid">
     <div class="about-img">
       <img class="" src="" alt="Photo of Lindsay Trowell">
     </div>
@@ -133,14 +133,16 @@
 
 <section class="contact-section">
   <div class="">
-    <img src="" alt="">
     <div class="contact-container">
-      <div class="">
-        <h2>I'd love to hear from you</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <div class="grid">
+        <div class="text-container">
+          <h2>I'd love to hear from you</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
       </div>
 
-      <div class="">
+      <div class="grid">
+        <img src="../assets/images/feather.png" alt="">
         <div class="form-container">
           <form class="" action="index.html" method="post">
             <label for="name">Email</label>
