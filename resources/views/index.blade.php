@@ -1,29 +1,26 @@
 @extends('layouts.app')
+@section('content')
 
 <div class="above-the-fold">
   <div class="pink"></div>
-  @section('content')
-    @include('partials.page-header')
-
-
   <section class="hero">
     <div class="grid">
       <div class="heading-text grid-item">
-        <h3>Councellor and Parenting Coach</h3>
+        <p class="title">Councellor and Parenting Coach</p>
         <h1>Creating Calm Within the Chaos</h1>
         <p>Healping parents, caregivers, and service providers stay calm, connected and in control</p>
-        <div class="btn">Book a Free Consult</div>
+        <a href="#" class="btn">Book a Free Consult</a>
       </div>
-      <div class="grid-item">
-        <img class="hummingbird" src="../assets/images/hummingbird.png" alt="watercolour painting of hummingbird">
+      <div class="grid-item bird-img">
+        <img class="hummingbird" src="@asset('images/hummingbird.png')" alt="watercolour painting of hummingbird">
       </div>
       <div class="side-nav grid-item">
         <h3>Counselling Services</h3>
         <ul>
-          <li>Parents  ></li>
-          <li>Caregivers  ></li>
-          <li>Service Providers  ></li>
-          <li>Indigenous Resources  ></li>
+          <li><a href="/services/families">Parents<i class="arrow right"></i></a></li>
+          <li><a href="#">Caregivers<i class="arrow right"></i></a></li>
+          <li><a href="#">Service Providers<i class="arrow right"></i></a></li>
+          <li><a href="#">Indigenous Resources<i class="arrow right"></i></a></li>
         </ul>
       </div>
     </div>
@@ -35,7 +32,7 @@
     <div class="grid">
       <div class="box-container">
         <h2>Conselling for</h2>
-        <h3>Parents, Cargivers, and Service Providers</h3>
+        <p class="subtitle">Parents, Cargivers, and Service Providers</p>
         <p> Lindsay Trowell Counselling is a private practice that utilizes a multi-cultural, person-centered approach to counselling and coaching.  Every session is tailored to your individual experiences and desired outcomes.</p>
         <div class="btn">See all Services</div>
       </div>
@@ -47,7 +44,7 @@
   <div class="">
     <div class="grid">
       <div class="box-container">
-        <h2>I can Help</h2>
+        <h2>I Can Help</h2>
         <p>I provide a safe and relaxing space for families, caregivers, and service providers to establish a supportive and trusting therapeutic relationship.</p>
         <p>My counseling approach is person-centered; a non-authoritative approach that allows my clients to take the lead and discover their own solutions. I act as a compassionate facilitator, listening without judgement and provide encouraging support.</p>
         <div class="btn">Book a Free Consultation</div>

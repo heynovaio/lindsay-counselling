@@ -1,0 +1,11 @@
+.btn {
+  background-color: $brandCTA;
+  color: $lightText;
+  padding: 12px 32px 16px;
+  font-size: 18px;
+  font-family: $semibold-font;
+
+  &:hover {
+    background-color: $brandBlue;
+  }
+}

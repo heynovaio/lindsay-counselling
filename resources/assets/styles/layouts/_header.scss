@@ -1,36 +1,44 @@
-.banner .nav li {
-  @extend .nav-item;
-}
-
-.banner .nav a {
-  @extend .nav-link;
-}
-
 .banner {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: nowrap;
+  padding-top: 8px;
+
+  @media (min-width: $sm) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    position: absolute;
+    width: 100%;
+    top: 0;
+  }
 
   #title {
     font-size: 30px;
     font-family: $heading-font;
     color: $text-color;
     margin-left: 98px;
+    padding-top: 10px;
   }
 
   ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    flex-wrap: nowrap;
-    list-style: none;
+    display: none;
 
-    .nav-item {
+    @media (min-width: $sm) {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      flex-wrap: nowrap;
+      list-style: none;
+      padding-right: 20px;
+    }
+
+    .menu-item {
       padding: 0 38px;
-      color: $text-color;
       font-size: 18px;
       font-family: $semibold-font;
+
+      a {
+        color: $text-color;
+      }
     }
   }
 }

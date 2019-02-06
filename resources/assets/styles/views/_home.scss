@@ -3,13 +3,10 @@
 // above-the-fold
 .above-the-fold {
   border-radius: 4px;
-  box-shadow: -3px 6px 20px 0 rgba(156, 158, 157, 0.4);
   background-image: radial-gradient(circle at 22% 27%, rgba(158, 193, 189, 0.18), #bbdce1);
-  width: 100%;
-  height: 100%;
   margin: 0;
-  position: absolute;
-  z-index: 1;
+  overflow: hidden;
+  box-shadow: 0 -3px 32px 0 rgba(43, 88, 93, 0.14) inset;
 
   @media (min-width: $sm) {
     min-height: 700px;
@@ -32,27 +29,51 @@
 
 .hero {
   @media (min-width: $sm) {
-    margin-top: 120px;
+    padding-top: 150px;
     margin-left: 100px;
   }
 
   .grid {
     justify-content: space-between;
+    align-items: center;
   }
 
-  h3 {
-    text-transform: uppercase;
+  .heading-text .title {
     font-size: 18px;
+    font-weight: 600;
     letter-spacing: 0.6px;
-    margin-bottom: 10px;
+    margin: 0 0 10px;
+    text-transform: uppercase;
+  }
+
+  .bird-img {
+    z-index: 2;
+
+    @media (min-width: $md) {
+      position: absolute;
+      text-align: center;
+      left: 61%;
+      transform: translateX(-50%);
+    }
+
+    @media (max-width: $md) {
+      max-width: 80%;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
   }
 
   .heading-text {
     max-width: 518px;
+    padding-bottom: 50px;
 
     p {
       font-size: 22px;
       margin-top: 14px;
+      line-height: 1.7;
     }
 
     .btn {
@@ -61,7 +82,39 @@
   }
 
   .side-nav {
-    margin-right: 12px;
+    background: $brandPink;
+    position: relative;
+    border-top-left-radius: 60px;
+    width: 440px;
+    height: 636px;
+    padding: 110px 24px 50px 12px;
+    text-align: right;
+    z-index: 1;
+    box-shadow: -5px 3px 8px 0 rgb(210, 179, 167) inset;
+    margin-right: -8px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 100%;
+      top: 50px;
+      border-bottom: 640px solid  $brandPink;
+      border-left: 216px solid transparent;
+    }
+
+    i {
+      border: solid $text-color;
+      border-width: 0 2px 2px 0;
+      display: inline-block;
+      padding: 3px;
+      margin-left: 3px;
+      vertical-align: middle;
+    }
+
+    .right {
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+    }
 
     h3 {
       font-size: 24px;
@@ -76,6 +129,10 @@
       color: $text-color;
       font-family: $sub-heading-font;
       letter-spacing: 0.8px;
+
+      a {
+        color: $text-color;
+      }
     }
   }
 }
@@ -83,6 +140,9 @@
 // what-section
 .what-section {
   margin-top: 72px;
+  background: url(../images/leaves_1.png) no-repeat;
+  background-position: 18% top;
+  padding-bottom: 205px;
 
   .box-container {
     border-radius: 4px;
@@ -90,18 +150,22 @@
     background-color: #f2f7f7;
     text-align: center;
     max-width: 778px;
-    padding: 35px 60px;
+    padding: 18px 50px 40px;
 
     h2 {
       font-size: 38px;
       letter-spacing: 0.6px;
+      margin-bottom: 0;
     }
 
-    h3 {
+    .subtitle {
       font-size: 25px;
       font-family: $sub-heading-font;
-      line-height: 1.88;
+      line-height: 1.5;
       letter-spacing: 0.7px;
+      margin: 0;
+      font-weight: 400;
+      padding-top: 0;
     }
 
     p {
@@ -109,20 +173,13 @@
       font-size: 20px;
       line-height: 2;
       letter-spacing: 0.2px;
+      margin-bottom: 30px;
     }
   }
 }
 
 // I can help section
 .how-section {
-  margin-top: 92px;
-
-  .grid {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
   .box-container {
     max-width: 700px;
     text-align: center;
@@ -281,34 +338,16 @@
 
 // counselling services @section
 .services-section {
-  margin-top: 183px;
+  margin-top: 140px;
 
-  .grid {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-    @media (min-width: $sm) {
-      flex-wrap: nowrap;
-    }
-
-    .services-heading {
-      text-align: center;
-      margin-bottom: 93px;
-
-      h2 {
-        font-size: 38px;
-      }
-
-      p {
-        font-size: 20px;
-      }
-    }
+  .services-heading {
+    text-align: center;
+    margin-bottom: 40px;
   }
 
   .services-grid {
     @media (min-width: $sm) {
-      margin: 0 50px;
+      margin: 0 20px;
     }
 
     .services-box {
@@ -320,6 +359,12 @@
 
       h3 {
         font-size: 26px;
+      }
+
+      ul {
+        margin-left: 6px;
+        padding-left: 0;
+        color: $text-color;
       }
     }
 

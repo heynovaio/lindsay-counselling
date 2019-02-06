@@ -1,17 +1,20 @@
-.btn {
-  background-color: $brandCTA;
-  color: $lightText;
-  padding: 14px 42px;
-  font-size: 18px;
-  font-family: $semibold-font;
+.archive,
+.single,
+.page-template-default {
+  padding-top: 150px;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .grid {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-
   @media (min-width: $sm) {
     flex-wrap: nowrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 }
