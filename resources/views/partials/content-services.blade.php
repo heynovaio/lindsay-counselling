@@ -1,10 +1,7 @@
 <article @php post_class() @endphp>
-	<div class="wrapper">
-	  <header>
-	    <h2 class="entry-title"><a href="{{ get_permalink() }}">{{ get_the_title() }}</a></h2>
-	  </header>
-	  <div class="entry-summary">
-	    @php the_excerpt() @endphp
-	  </div>
-	</div>
+	<a href="{{ get_permalink() }}">
+  <h2 class="entry-title">
+  {{ get_the_title() }}</h2>
+    @php the_excerpt() @endphp
+  </a>
 </article>

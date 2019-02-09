@@ -1,0 +1,144 @@
+.breadcrumb {
+  background: none;
+  padding-left: 0;
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+  }
+
+  li {
+    padding-right: 8px;
+    margin-right: 8px;
+    position: relative;
+
+    &::after {
+      content: "";
+      border: solid #074869;
+      border-width: 0 2px 2px 0;
+      display: inline-block;
+      padding: 3px;
+      margin-left: 8px;
+      transform: rotate(-45deg);
+      vertical-align: middle;
+    }
+
+    &:last-of-type {
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  a {
+    color: $text-color;
+  }
+}
+
+.archive {
+  .main {
+    background: url(../images/services-title-img.jpg) no-repeat;
+    background-repeat: no-repeat;
+    background-position: 22% 130px;
+    padding-top: 150px;
+  }
+
+  h1 {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .heading {
+    padding-top: 150px;
+    margin-bottom: 40px;
+  }
+
+  .services-list {
+    padding-bottom: 180px;
+
+    a {
+      color: $text-color;
+    }
+
+    ul {
+      padding-left: 0;
+      list-style: none;
+      flex-wrap: wrap;
+      flex-direction: unset;
+    }
+
+    li {
+      padding: 30px 40px 50px;
+      justify-content: space-between;
+      align-content: space-between;
+      flex: 48%;
+      text-align: center;
+      margin: 10px;
+      min-width: 48%;
+
+      a:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .box-container {
+    box-shadow: -2px 8px 16px 0 rgba(191, 191, 191, 0.5);
+    background-image: radial-gradient(circle at 22% 27%, rgba(158, 193, 189, 0.18), #bbdce1);
+    background-color: #fff;
+    border-radius: 4px;
+
+    @media (min-width: $sm) {
+      min-width: 50%;
+    }
+  }
+}
+
+.what {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 120px;
+
+  .grid {
+    flex-direction: row-reverse;
+  }
+
+  .box-container {
+    padding: 52px 45px 45px;
+    background: #f2f6f6;
+    margin-left: -40px;
+    margin-top: 30px;
+    position: relative;
+    max-width: 690px;
+  }
+}
+
+.why {
+  margin-bottom: 120px;
+
+  .box-container {
+    background: #ffebe4;
+    padding: 52px 45px 45px;
+    margin-right: -40px;
+    margin-top: 30px;
+    position: relative;
+    max-width: 690px;
+  }
+}
+
+section.services {
+  padding-bottom: 120px;
+
+  .grid {
+    align-items: flex-end;
+  }
+
+  .copy-container {
+    min-width: 40%;
+  }
+
+  .img-no-box {
+    width: 60%;
+  }
+}

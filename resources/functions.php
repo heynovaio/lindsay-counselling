@@ -110,3 +110,26 @@ Container::getInstance()
             'view' => require dirname(__DIR__).'/config/view.php',
         ]);
     }, true);
+
+/* Breadcrumbs */
+function the_breadcrumb() {
+    echo '<ul id="crumbs">';
+    echo '<li><a href="';
+    echo get_option('home');
+    echo '">';
+    echo 'Home';
+    echo "</a></li>";
+    if (is_category() || is_single()) {
+        echo '<li><a href="/services/">Services</a></li>';
+        if (is_single()) {
+            echo "</li><li>";
+            the_title();
+            echo '</li>';
+        }
+    } elseif (is_page()) {
+        echo '<li>';
+        echo the_title();
+        echo '</li>';
+    }
+    echo '</ul>';
+}

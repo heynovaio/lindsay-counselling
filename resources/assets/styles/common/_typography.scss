@@ -31,3 +31,15 @@ p {
   color: $text-color;
   font-size: 20px;
 }
+
+ul {
+  font-family: $body-font;
+  color: $text-color;
+  font-size: 18px;
+  line-height: 1.4;
+  padding-left: 26px;
+
+  li {
+    margin-bottom: 5px;
+  }
+}
