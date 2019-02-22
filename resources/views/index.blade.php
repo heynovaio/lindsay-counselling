@@ -6,7 +6,7 @@
   <section class="hero">
     <div class="grid">
       <div class="heading-text grid-item">
-        <p class="title">Councellor and Parenting Coach</p>
+        <p class="title">Counsellor and Parenting Specialist</p>
         <h1>Creating Calm Within the Chaos</h1>
         <p>Healping parents, caregivers, and service providers stay calm, connected and in control</p>
         <a href="#" class="btn">Book a Free Consult</a>
@@ -28,118 +28,137 @@
 </div>
 
 <section class="what-section">
-  <div class="flowers">
-    <div class="grid">
-      <div class="box-container">
-        <h2>Conselling for</h2>
-        <p class="subtitle">Parents, Cargivers, and Service Providers</p>
-        <p> Lindsay Trowell Counselling is a private practice that utilizes a multi-cultural, person-centered approach to counselling and coaching.  Every session is tailored to your individual experiences and desired outcomes.</p>
-        <div class="btn">See all Services</div>
+  <div class="container">
+    <div class="flowers">
+      <div class="grid">
+        <div class="box-container">
+          <h2>Conselling for</h2>
+          <p class="subtitle">Parents, Cargivers, and Service Providers</p>
+          <p>I am a Registered Therapeutic Counsellor and Parenting Specialist that utilizes a multi-cultural, person-centered approach to counselling and coaching.  Every session is tailored to your individual experiences and desired outcomes.</p>
+          <a href="#" class="btn">See all Services</a>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
 <section class="how-section">
-  <div class="">
+  <div class="container">
     <div class="grid">
       <div class="box-container">
         <h2>I Can Help</h2>
         <p>I provide a safe and relaxing space for families, caregivers, and service providers to establish a supportive and trusting therapeutic relationship.</p>
-        <p>My counseling approach is person-centered; a non-authoritative approach that allows my clients to take the lead and discover their own solutions. I act as a compassionate facilitator, listening without judgement and provide encouraging support.</p>
-        <div class="btn">Book a Free Consultation</div>
+        <p>My counselling approach is person-centered; a  strengths-based approach that allows my clients to take the lead and discover their own solutions. I act as a compassionate facilitator, listening without judgement and providing encouraging support.</p>
+        <a href="#" class="btn">Book a Free Consultation</a>
       </div>
-
     </div>
   </div>
 
 </section>
 
 <section class="services-section">
-  <div class="grid">
-    <div class="services-heading">
-      <h2>Counselling Services</h2>
-      <p>I provide a safe and relaxing place for children, adults, caregivers, and service providers.</p>
+  <div class="container">
+    <div class="grid">
+      <div class="services-heading">
+        <h2>Counselling Services</h2>
+        <p>I provide a safe and relaxing place for children, adults, caregivers, and service providers.</p>
+      </div>
     </div>
+
+     <div class="grid services-grid">
+        <div class="services-box box-1">
+          <h3>Parents</h3>
+          <ul>
+            <li>Family relationships</li>
+            <li>Blended families</li>
+            <li>Teen depression & anxiety</li>
+            <li>ADHD, FASD & autism</li>
+            <li>Divorce, separation, and co-parenting</li>
+            <li>Trauma & attachment difficulties</li>
+            <li>Managing challenging behaviours</li>
+            <li>Self-care strategies</li>
+          </ul>
+          <div class="btn">View Parents</div>
+        </div>
+
+        <div class="services-box box-2">
+          <h3>Caregivers</h3>
+          <ul>
+            <li>Of individuals with developmental disabilities</li>
+            <li>Of children in or from  out-of-home care</li>
+            <li>Of family members & elders</li>
+            <li>Of individuals with mental health needs</li>
+          </ul>
+          <div class="btn">View Cargivers</div>
+        </div>
+
+        <div class="services-box box-3">
+          <h3>Service Providers</h3>
+          <ul>
+            <li>Frontline workers</li>
+            <li>Police, fire, and ambulance professionals</li>
+            <li>Nurses & social workers</li>
+            <li>Military personnel</li>
+            <li>Teachers & education Assistants</li>
+          </ul>
+          <div class="btn">View Service Providers</div>
+        </div>
+
+        <div class="services-box box-4">
+          <h3>Indigenous Perspectives</h3>
+          <ul>
+            <li>Cultural identity</li>
+            <li>Teachers & education assistants</li>
+            <li>Kiyawow Peer Parenting Métis Online Program</li>
+            <li>1:1 Indigenous Parenting Program</li>
+            <li>Counselling & coaching for parents of children at risk of being removed</li>
+            <li>Youth cultural connections, in office or outreach</li>
+          </ul>
+          <div class="btn">View Indigenous Perspectives</div>
+        </div>
+      </div>
   </div>
 
-   <div class="grid services-grid">
-      <div class="services-box box-1">
-        <h3>Caregivers</h3>
-        <ul>
-          <li>Of individuals with developmental disabilities</li>
-          <li>Of children in or from care systems</li>
-          <li>Of family members & elders</li>
-          <li>Of individuals with Mental Health needs</li>
-        </ul>
-        <div class="btn">Learn More</div>
-      </div>
-
-      <div class="services-box box-2">
-        <h3>Caregivers</h3>
-        <ul>
-          <li>Of individuals with developmental disabilities</li>
-          <li>Of children in or from care systems</li>
-          <li>Of family members & elders</li>
-          <li>Of individuals with Mental Health needs</li>
-        </ul>
-        <div class="btn">Learn More</div>
-      </div>
-
-      <div class="services-box box-3">
-        <h3>Caregivers</h3>
-        <ul>
-          <li>Of individuals with developmental disabilities</li>
-          <li>Of children in or from care systems</li>
-          <li>Of family members & elders</li>
-          <li>Of individuals with Mental Health needs</li>
-        </ul>
-        <div class="btn">Learn More</div>
-      </div>
-
-      <div class="services-box box-4">
-        <h3>Caregivers</h3>
-        <ul>
-          <li>Of individuals with developmental disabilities</li>
-          <li>Of children in or from care systems</li>
-          <li>Of family members & elders</li>
-          <li>Of individuals with Mental Health needs</li>
-        </ul>
-        <div class="btn">Learn More</div>
-      </div>
-
-    </div>
 </section>
 
 <section class="about-section">
-  <div class="grid">
-    <div class="about-img">
-      <img class="" src="" alt="Photo of Lindsay Trowell">
+  <div class="container">
+    <div class="grid about-grid">
+      <div class="about-img">
+        <img class="lindsay-pic" src="@asset('images/about.jpg')" alt="Photo of Lindsay Trowell">
+      </div>
+      <div class="text-container">
+        <h2>Hi, I'm Lindsay</h2>
+        <p>I am a Registered Therapeutic Counsellor and Parenting Specialist.</p>
+        <p>I have been working with children, families, caregivers, and service providers in various health settings for the past 18 years, on the South Vancouver Island lands of the Lekwungen and WSÁNEĆ Peoples including T’Sooke and Scia’New Nations in which, I live work and play.</p>
+        <p>I believe that, given the appropriate tools and resources, coupled with an unwavering support network, all of us have the capacity to foster resilience, calmness, and positive connections.</p>
+        <div class="btn">Read More</div>
+      </div>
     </div>
+  </div>
+</section>
 
+<section class="testimonial-section">
+  <div class="container">
     <div class="text-container">
-      <h2>Hi, I'm Lindsay</h2>
-      <p>I am a counsellor and parent coach. I have been in the helping profession for 18 years, while specializing in working with individuals and children with disabilities and  complex behavioural challenges.</p>
-      <p>As a mother, caregiver and service provider myself, I know how challenging it is to be pulled in many directions and I understand, how difficult fitting in self-care, can be.</p>
-      <p>Read more about my story, and what makes me unique as a councellor</p>
-      <div class="btn">Learn More</div>
+      <h2>A few words from others...</h2>
+      <p>“I found Lindsay to be professional, a good listener, trustworthy, straightforward and extremely knowledgeable on the subject I was dealing with. She shared her wealth of information and experience, freely and professionally which enabled and empowered me and my daughter towards intelligent direction.  Lindsay's experience and support is continuously highly beneficial to me and my family."</p>
+      <p class="quote-name">- J.B.</p>
     </div>
-
   </div>
 </section>
 
 <section class="contact-section">
-  <div class="">
+  <div class="container">
     <div class="contact-container">
       <div class="grid">
         <div class="text-container">
           <h2>I'd love to hear from you</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>Taking the first step can feel daunting, but you deserve to feel safe and be heard. I invite you to contact me for a no-obligation phone consultation.</p>
         </div>
       </div>
 
       <div class="grid contact-info">
-        <img src="../assets/images/feather.png" alt="">
         <div class="form-container">
           <form class="" action="index.html" method="post">
             <label for="name">Email</label>
@@ -155,15 +174,19 @@
         <div class="contact-info-container">
           <div class="contact-details">
             <i class="fas fa-map-marker-alt"></i>
-            <p>385 Noah Place Suite 878</p>
+            <div class="address">
+              <p>Located in the Westshore Area</p>
+              <p>102-3212 Jacklin Road</p>
+              <p>In the Stillpoint Acupuncture Clinic</p>
+            </div>
           </div>
           <div class="contact-details">
             <i class="fas fa-phone"></i>
-            <p>877-255-7945</p>
+            <p>250-217-4536</p>
           </div>
           <div class="contact-details">
             <i class="fas fa-envelope"></i>
-            <p>info@form.com</p>
+            <p>Lindsay.trowell@gmail.com</p>
           </div>
           <div class="btn"><i class="fas fa-download"></i>Download intake form</div>
 

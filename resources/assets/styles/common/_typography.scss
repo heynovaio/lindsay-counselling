@@ -19,6 +19,11 @@ h2 {
   font-size: 38px;
   line-height: 1.88;
   letter-spacing: 0.7px;
+
+  @media (max-width: $sm) {
+    line-height: 1.48em;
+    margin-top: 40px;
+  }
 }
 
 h3 {

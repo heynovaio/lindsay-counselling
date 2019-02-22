@@ -6,9 +6,20 @@
 
 .container {
   padding: 0 20px;
+
+  @media (min-width: 1200px) {
+    max-width: 1300px;
+  }
 }
 
 .grid {
+  @media (max-width: $sm) {
+    flex-wrap: nowrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   @media (min-width: $sm) {
     flex-wrap: nowrap;
     display: flex;
