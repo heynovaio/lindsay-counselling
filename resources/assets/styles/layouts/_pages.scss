@@ -1,6 +1,68 @@
-.single {
+.title-heading {
+  padding: 50px 0 30px;
+  position: relative;
+  background: #fff;
+  max-width: 500px;
+  margin: 0 auto 80px;
+  background-image: radial-gradient(circle at 22% 27%, rgba(158, 193, 189, 0.18), #bbdce1);
+  border-radius: 4px;
+  box-shadow: -2px 8px 16px 0 rgba(191, 191, 191, 0.5);
+
+  @media (max-width: $sm) {
+    margin-bottom: 50px;
+  }
+
+  h1 {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
+
+.meta-content {
+  margin-bottom: 50px;
+
+  h2 {
+    @media (max-width: $sm) {
+      margin-top: 0;
+    }
+  }
+
   .grid {
-    justify-content: flex-start;
+    @media (min-width: $sm) {
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+  }
+
+  .inner-container {
+    ol,
+    ul {
+      font-size: 20px;
+      font-weight: bold;
+
+      li {
+        margin-bottom: 4px;
+      }
+
+      ul {
+        margin-left: 10px;
+      }
+    }
+
+    ol {
+      > li {
+        margin-bottom: 20px;
+      }
+
+      ul {
+        margin-top: 20px;
+      }
+    }
+
+    p a {
+      color: $brandCTA;
+      text-decoration: underline;
+    }
   }
 
   .img-container {
@@ -28,12 +90,94 @@
     }
   }
 
+  .section-3,
+  .section-2,
+  .section-1 {
+    h2 {
+      min-height: 56px;
+    }
+
+    .inner-container {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+  }
+
+  .copy-container {
+    margin: 0 auto;
+
+    .btn {
+      margin-top: 40px;
+    }
+  }
+
+  .section-1 {
+    position: relative;
+    z-index: 2;
+
+    @media (min-width: $sm) {
+      margin-bottom: 80px;
+    }
+
+    .grid {
+      @media (min-width: $sm) {
+        flex-direction: row-reverse;
+      }
+    }
+
+    .box-container {
+      padding: 52px 45px 45px;
+      background: #f2f6f6;
+      margin-left: -40px;
+      margin-top: 30px;
+      position: relative;
+      max-width: 690px;
+
+      @media (max-width: $sm) {
+        padding: 30px 20px 30px;
+        margin-left: 0;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .section-2 {
+    margin-bottom: 40px;
+
+    @media (min-width: $sm) {
+      margin-bottom: 80px;
+    }
+
+    .box-container {
+      background: #ffebe4;
+      padding: 52px 45px 45px;
+      margin-right: -40px;
+      margin-top: 30px;
+      position: relative;
+      max-width: 690px;
+
+      @media (max-width: $sm) {
+        padding: 30px 20px 30px;
+        margin-right: 0;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+.single {
   .heading {
     background: url(../images/services-title-img.jpg) no-repeat;
     background-position: center;
     margin-bottom: -120px;
     padding: 100px 0 300px;
     position: relative;
+
+    @media (max-width: $sm) {
+      padding-top: 60px;
+      padding-bottom: 200px;
+      text-align: center;
+    }
 
     .bound-box {
       position: relative;
@@ -50,6 +194,10 @@
         z-index: 1;
         left: 0;
         top: 0;
+
+        @media (max-width: $md) {
+          width: 100%;
+        }
       }
     }
 
@@ -62,6 +210,10 @@
       max-width: 700px;
       box-shadow: none;
       padding: 35px 20px 100px 0;
+
+      @media (max-width: $sm) {
+        padding: 35px 0 40px;
+      }
     }
 
     .breadcrumb {
@@ -79,3 +231,19 @@
     }
   }
 }
+
+.template-contact,
+.page-template-default {
+  .main {
+    background: url(../images/leaves_1.jpg) no-repeat;
+    background-repeat: no-repeat;
+    background-position: 44% -62px;
+    padding-top: 150px;
+
+    @media (max-width: $sm) {
+      background-position: 41% -86px;
+      padding-top: 100px;
+    }
+  }
+}
+

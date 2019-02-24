@@ -17,9 +17,11 @@ function create_posttype() {
                 'name' => __( 'Services' ),
                 'singular_name' => __( 'Service' )
             ),
+            'show_in_rest' => true,
             'public' => true,
-            'has_archive' => true,
+            'has_archive' => false,
             'rewrite' => array('slug' => 'services'),
+             'menu_icon' => 'dashicons-heart',
         )
     );
 }

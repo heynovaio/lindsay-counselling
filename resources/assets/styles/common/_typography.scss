@@ -11,6 +11,11 @@ h1 {
   line-height: 1.26;
   letter-spacing: 0.8px;
   font-size: 61px;
+
+  @media (max-width: $sm) {
+    font-size: 50px;
+    margin-bottom: 15px;
+  }
 }
 
 h2 {
@@ -37,6 +42,7 @@ p {
   font-size: 20px;
 }
 
+ol,
 ul {
   font-family: $body-font;
   color: $text-color;

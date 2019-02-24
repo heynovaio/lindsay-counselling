@@ -1,4 +1,6 @@
-
+{{--
+  Template Name: Service List
+--}}
 
 <?php
   $section_title_1 = get_field('section_title_1');
@@ -11,11 +13,28 @@
   $section_content_3 = get_field('section_content_3');
   $section_img_3 = get_field('section_img_3');
 ?>
+
 @extends('layouts.app')
 @section('content')
-<section class="title-heading box-container">
+<section class="services-list">
   <div class="wrapper">
-     <h1>{{ get_the_title() }}</h1>
+    <h1 class="page-title">{{ get_the_title() }}</h1>
+    <?php
+
+    $args = array(
+        'post_type' => 'services',
+        'nopaging' => true,
+      );
+
+    $services = new WP_Query($args); ?>
+
+    <ul class="grid">
+    <?php if ($services->have_posts()): while($services->have_posts() ): $services->the_post(); ?>
+      <li class="grid-item box-container">
+        @include('partials/content-services')
+      </li>
+     <?php endwhile; endif; ?>
+    </ul>
   </div>
 </section>
 <div class="meta-content">
@@ -63,17 +82,17 @@
   <?php endif; ?>
   <section class="section-3">
     <div class="wrapper">
-    	<?php if( $section_content_3 ): ?>
-      	<div class="copy-container">
+      <?php if( $section_content_3 ): ?>
+        <div class="copy-container">
           <div class="inner-container">
             <h2><?= $section_title_3; ?></h2>
             <div><?= $section_content_3; ?></div>
             <a href="#book" class="btn book-btn">Book a Free Consultation</a>
           </div>
-      	</div>
-    	<?php endif; ?>
+        </div>
+      <?php endif; ?>
     </div>
   </section>
- </div>
+</div>
 @include('partials/contact')
 @endsection

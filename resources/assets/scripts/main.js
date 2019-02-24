@@ -20,5 +20,23 @@ const routes = new Router({
   aboutUs,
 });
 
+$(document).ready(function(){
+  $('#nav-icon3').click(function(){
+    $(this).toggleClass('open');
+    $('.navbar').toggleClass('open');
+  });
+
+  $('.open .book-btn').click(function() {
+    $(this).toggleClass('open');
+    $('.navbar').toggleClass('open');
+  });
+
+  $('.book-btn').click(function() {
+    var aTag = $('#book');
+    $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+  });
+
+});
+
 // Load Events
 jQuery(document).ready(() => routes.loadEvents());

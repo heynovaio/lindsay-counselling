@@ -3,6 +3,11 @@
   position: relative;
   z-index: 3;
 
+  @media (max-width: $sm) {
+    text-align: center;
+    padding: 20px 0;
+  }
+
   @media (min-width: $sm) {
     display: flex;
     flex-direction: row;
@@ -13,17 +18,38 @@
     top: 0;
   }
 
+  .menu-primary-menu-container {
+    @media (min-width: $sm) {
+      padding-right: 236px;
+    }
+  }
+
   #title {
     font-size: 30px;
     font-family: $heading-font;
     color: $text-color;
     margin-left: 30px;
     padding-top: 14px;
+
+    @media (max-width: $sm) {
+      text-align: center;
+      margin-left: 0;
+    }
+
+    &:hover {
+      text-decoration: none;
+      color: $brandCTA;
+    }
+  }
+
+  .btn {
+    @media (min-width: $sm) {
+      position: fixed;
+      right: 8px;
+    }
   }
 
   ul {
-    display: none;
-
     @media (min-width: $sm) {
       display: flex;
       flex-direction: row;
@@ -40,7 +66,129 @@
 
       a {
         color: $text-color;
+
+        &:hover {
+          color: $brandCTA;
+          text-decoration: none;
+        }
       }
     }
   }
+
+  .nav {
+    @media (max-width: $sm) {
+      display: block;
+      margin-bottom: 30px;
+    }
+  }
+
+  .navbar {
+    @media (max-width: $sm) {
+      display: block;
+      position: fixed;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.93);
+      width: 100%;
+      text-align: center;
+      padding-top: 40px;
+      bottom: 100%;
+      transition: bottom 0.25s;
+
+      &.open {
+        bottom: 0%;
+      }
+
+      li {
+        font-size: 28px;
+        padding: 20px 0;
+      }
+    }
+  }
+}
+
+//Hamburger Nav
+
+#nav-icon3 {
+  @media (min-width: $sm) {
+    display: none;
+  }
+
+  width: 50px;
+  height: 50px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  box-shadow: -2px 3px 8px 0 rgba(191, 191, 191, 0.7);
+  z-index: 100;
+  background: $brandCTA;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  border-radius: 50%;
+}
+
+#nav-icon3 span {
+  display: block;
+  position: absolute;
+  background: #fff;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  margin: 12px 10px;
+  height: 4px;
+  width: 30px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+/* Icon 3 */
+
+#nav-icon3 span:nth-child(1) {
+  top: 0;
+}
+
+#nav-icon3 span:nth-child(2),
+#nav-icon3 span:nth-child(3) {
+  top: 10px;
+}
+
+#nav-icon3 span:nth-child(4) {
+  top: 20px;
+}
+
+#nav-icon3.open span:nth-child(1) {
+  width: 0%;
+  left: 50%;
+}
+
+#nav-icon3.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#nav-icon3.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#nav-icon3.open span:nth-child(4) {
+  top: 10px;
+  width: 0%;
+  left: 50%;
 }

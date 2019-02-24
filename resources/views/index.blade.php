@@ -9,7 +9,7 @@
         <p class="title">Counsellor and Parenting Specialist</p>
         <h1>Creating Calm Within the Chaos</h1>
         <p>Healping parents, caregivers, and service providers stay calm, connected and in control</p>
-        <a href="#" class="btn">Book a Free Consult</a>
+        <a href="#book" class="btn book-btn">Book a Free Consult</a>
       </div>
       <div class="grid-item bird-img">
         <img class="hummingbird" src="@asset('images/hummingbird.png')" alt="watercolour painting of hummingbird">
@@ -17,10 +17,10 @@
       <div class="side-nav grid-item">
         <h3>Counselling Services</h3>
         <ul>
-          <li><a href="/services/families">Parents<i class="arrow right"></i></a></li>
-          <li><a href="#">Caregivers<i class="arrow right"></i></a></li>
-          <li><a href="#">Service Providers<i class="arrow right"></i></a></li>
-          <li><a href="#">Indigenous Resources<i class="arrow right"></i></a></li>
+          <li><a href="{{ home_url('/') }}services/parents/">Parents<i class="arrow right"></i></a></li>
+          <li><a href="{{ home_url('/') }}services/caregivers/">Caregivers<i class="arrow right"></i></a></li>
+          <li><a href="{{ home_url('/') }}services/service-providers/">Service Providers<i class="arrow right"></i></a></li>
+          <li><a href="{{ home_url('/') }}services/indigenous-perspectives/">Indigenous Resources<i class="arrow right"></i></a></li>
         </ul>
       </div>
     </div>
@@ -35,7 +35,7 @@
           <h2>Conselling for</h2>
           <p class="subtitle">Parents, Cargivers, and Service Providers</p>
           <p>I am a Registered Therapeutic Counsellor and Parenting Specialist that utilizes a multi-cultural, person-centered approach to counselling and coaching.  Every session is tailored to your individual experiences and desired outcomes.</p>
-          <a href="#" class="btn">See all Services</a>
+          <a href="{{ home_url('/') }}services" class="btn">See all Services</a>
         </div>
       </div>
     </div>
@@ -49,7 +49,7 @@
         <h2>I Can Help</h2>
         <p>I provide a safe and relaxing space for families, caregivers, and service providers to establish a supportive and trusting therapeutic relationship.</p>
         <p>My counselling approach is person-centered; a  strengths-based approach that allows my clients to take the lead and discover their own solutions. I act as a compassionate facilitator, listening without judgement and providing encouraging support.</p>
-        <a href="#" class="btn">Book a Free Consultation</a>
+        <a href="#book" class="btn book-btn">Book a Free Consultation</a>
       </div>
     </div>
   </div>
@@ -78,30 +78,7 @@
             <li>Managing challenging behaviours</li>
             <li>Self-care strategies</li>
           </ul>
-          <div class="btn">View Parents</div>
-        </div>
-
-        <div class="services-box box-2">
-          <h3>Caregivers</h3>
-          <ul>
-            <li>Of individuals with developmental disabilities</li>
-            <li>Of children in or from  out-of-home care</li>
-            <li>Of family members & elders</li>
-            <li>Of individuals with mental health needs</li>
-          </ul>
-          <div class="btn">View Cargivers</div>
-        </div>
-
-        <div class="services-box box-3">
-          <h3>Service Providers</h3>
-          <ul>
-            <li>Frontline workers</li>
-            <li>Police, fire, and ambulance professionals</li>
-            <li>Nurses & social workers</li>
-            <li>Military personnel</li>
-            <li>Teachers & education Assistants</li>
-          </ul>
-          <div class="btn">View Service Providers</div>
+          <a href="{{ home_url('/') }}services/parents/" class="btn">View Parents</a>
         </div>
 
         <div class="services-box box-4">
@@ -114,8 +91,32 @@
             <li>Counselling & coaching for parents of children at risk of being removed</li>
             <li>Youth cultural connections, in office or outreach</li>
           </ul>
-          <div class="btn">View Indigenous Perspectives</div>
+          <a href="{{ home_url('/') }}services/indigenous-perspectives/" class="btn">View Indigenous Perspectives</a>
         </div>
+
+        <div class="services-box box-2">
+          <h3>Caregivers</h3>
+          <ul>
+            <li>Of individuals with developmental disabilities</li>
+            <li>Of children in or from  out-of-home care</li>
+            <li>Of family members & elders</li>
+            <li>Of individuals with mental health needs</li>
+          </ul>
+          <a href="{{ home_url('/') }}services/caregivers/" class="btn">View Cargivers</a>
+        </div>
+
+        <div class="services-box box-3">
+          <h3>Service Providers</h3>
+          <ul>
+            <li>Frontline workers</li>
+            <li>Police, fire, and ambulance professionals</li>
+            <li>Nurses & social workers</li>
+            <li>Military personnel</li>
+            <li>Teachers & education Assistants</li>
+          </ul>
+          <a href="{{ home_url('/') }}services/service-providers/" class="btn">View Service Providers</a>
+        </div>
+
       </div>
   </div>
 
@@ -148,55 +149,7 @@
   </div>
 </section>
 
-<section class="contact-section">
-  <div class="container">
-    <div class="contact-container">
-      <div class="grid">
-        <div class="text-container">
-          <h2>I'd love to hear from you</h2>
-          <p>Taking the first step can feel daunting, but you deserve to feel safe and be heard. I invite you to contact me for a no-obligation phone consultation.</p>
-        </div>
-      </div>
-
-      <div class="grid contact-info">
-        <div class="form-container">
-          <form class="" action="index.html" method="post">
-            <label for="name">Email</label>
-            <input type="text" id="name" name="Email" value="">
-            <label for="email">First Name</label>
-            <input type="email" id="email" name="" value="">
-            <label for="message">Your Message</label>
-            <textarea id="message" name="textarea"></textarea>
-            <input type="submit" class="btn">
-          </form>
-        </div>
-
-        <div class="contact-info-container">
-          <div class="contact-details">
-            <i class="fas fa-map-marker-alt"></i>
-            <div class="address">
-              <p>Located in the Westshore Area</p>
-              <p>102-3212 Jacklin Road</p>
-              <p>In the Stillpoint Acupuncture Clinic</p>
-            </div>
-          </div>
-          <div class="contact-details">
-            <i class="fas fa-phone"></i>
-            <p>250-217-4536</p>
-          </div>
-          <div class="contact-details">
-            <i class="fas fa-envelope"></i>
-            <p>Lindsay.trowell@gmail.com</p>
-          </div>
-          <div class="btn"><i class="fas fa-download"></i>Download intake form</div>
-
-        </div>
-
-      </div>
-
-    </div>
-  </div>
-</section>
+@include('partials/contact')
 
 <!-- add htm here -->
 
