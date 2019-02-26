@@ -32,7 +32,7 @@
     <div class="flowers">
       <div class="grid">
         <div class="box-container">
-          <h2>Conselling for</h2>
+          <h2>Counselling for</h2>
           <p class="subtitle">Parents, Cargivers, and Service Providers</p>
           <p>I am a Registered Therapeutic Counsellor and Parenting Specialist that utilizes a multi-cultural, person-centered approach to counselling and coaching.  Every session is tailored to your individual experiences and desired outcomes.</p>
           <a href="{{ home_url('/') }}services" class="btn">See all Services</a>
@@ -86,8 +86,8 @@
           <ul>
             <li>Cultural identity</li>
             <li>Teachers & education assistants</li>
-            <li>Kiyawow Peer Parenting Métis Online Program</li>
-            <li>1:1 Indigenous Parenting Program</li>
+            <li>Kiyawow peer parenting Métis online program</li>
+            <li>1:1 indigenous parenting program</li>
             <li>Counselling & coaching for parents of children at risk of being removed</li>
             <li>Youth cultural connections, in office or outreach</li>
           </ul>
@@ -97,10 +97,10 @@
         <div class="services-box box-2">
           <h3>Caregivers</h3>
           <ul>
-            <li>Of individuals with developmental disabilities</li>
-            <li>Of children in or from  out-of-home care</li>
-            <li>Of family members & elders</li>
-            <li>Of individuals with mental health needs</li>
+            <li>For individuals with developmental disabilities</li>
+            <li>For children in or from out-of-home care</li>
+            <li>For family members & elders</li>
+            <li>For individuals with mental health needs</li>
           </ul>
           <a href="{{ home_url('/') }}services/caregivers/" class="btn">View Cargivers</a>
         </div>
@@ -109,10 +109,10 @@
           <h3>Service Providers</h3>
           <ul>
             <li>Frontline workers</li>
-            <li>Police, fire, and ambulance professionals</li>
+            <li>Police, fire, & ambulance professionals</li>
             <li>Nurses & social workers</li>
             <li>Military personnel</li>
-            <li>Teachers & education Assistants</li>
+            <li>Teachers & education assistants</li>
           </ul>
           <a href="{{ home_url('/') }}services/service-providers/" class="btn">View Service Providers</a>
         </div>
