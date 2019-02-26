@@ -24,13 +24,13 @@
         </div>
         <div class="contact-details">
           <i class="fas fa-phone"></i>
-          <p>250-217-4536</p>
+          <a href="tel:250-217-4536">250-217-4536</a>
         </div>
         <div class="contact-details">
           <i class="fas fa-envelope"></i>
-          <p>Lindsay.trowell@gmail.com</p>
+          <a href="mailto:Lindsay.trowell@gmail.com">Lindsay.trowell@gmail.com</a>
         </div>
-        <div class="btn"><i class="fas fa-download"></i>Download intake form</div>
+        <a href="../assets/intake-form.pdf" class="btn"><i class="fas fa-download"></i>Download intake form</a>
       </div>
     </div>
   </div>

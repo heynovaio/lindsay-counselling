@@ -135,7 +135,7 @@
         <p>I am a Registered Therapeutic Counsellor and Parenting Specialist.</p>
         <p>I have been working with children, families, caregivers, and service providers in various health settings for the past 18 years, on the South Vancouver Island lands of the Lekwungen and WSÁNEĆ Peoples including T’Sooke and Scia’New Nations in which, I live work and play.</p>
         <p>I believe that, given the appropriate tools and resources, coupled with an unwavering support network, all of us have the capacity to foster resilience, calmness, and positive connections.</p>
-        <div class="btn">Read More</div>
+        <a href="{{ home_url('/') }}about" class="btn">Read More</a>
       </div>
     </div>
   </div>

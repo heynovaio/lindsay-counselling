@@ -8,7 +8,7 @@
       "./scripts/customizer.js"
     ]
   },
-  "publicPath": "/app/themes/sage",
+  "publicPath": "http://3e3bfb8e.ngrok.io/wp-content/themes/counselling",
   "devUrl": "http://lindsay-counselling-website.local",
   "proxyUrl": "http://localhost:3000",
   "cacheBusting": "[name]_[hash:8]",

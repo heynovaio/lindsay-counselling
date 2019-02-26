@@ -1,7 +1,7 @@
 //contact @section
 .contact-section {
   padding: 90px 0 110px;
-  background: url(../images/feather.png) no-repeat left top;
+  background: url("../images/feather.png") no-repeat left top;
   -o-background-size: 20% auto;
   -webkit-background-size: 20% auto;
   -moz-background-size: 20% auto;
@@ -121,7 +121,9 @@
       flex-wrap: nowrap;
       justify-content: flex-start;
 
+      a,
       p {
+        color: $text-color;
         font-size: 20px;
         font-family: $heading-font;
         display: inline-block;

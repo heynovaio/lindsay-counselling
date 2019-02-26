@@ -10,7 +10,7 @@
     list-style: none;
     padding-left: 0;
 
-    @media (max-width: $sm) {
+    @media (min-width: $sm) {
       display: flex;
     }
   }
@@ -46,7 +46,7 @@
 .page-template-template-comingsoon,
 .template-services {
   .main {
-    background: url(../images/servicelist-title-img.jpg) no-repeat;
+    background: url("../images/servicelist-title-img.jpg") no-repeat;
     background-repeat: no-repeat;
     background-position: center 96px;
 
