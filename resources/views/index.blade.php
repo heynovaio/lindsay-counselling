@@ -47,6 +47,8 @@
     <div class="grid">
       <div class="box-container">
         <h2>I Can Help</h2>
+        <p>Are you feeling exhausted, unsupported, and undervalued? Or perhaps you find yourself snapping at family members, drinking too much or losing sleep?</p>
+        <p>With my guidance, we can work together to help you feel calm, experience a strong connection with your family, improve your ability to control your big emotions, and give you a greater sense of confidence in your skills.</p>
         <p>I provide a safe and relaxing space for families, caregivers, and service providers to establish a supportive and trusting therapeutic relationship.</p>
         <p>My counselling approach is person-centered; a  strengths-based approach that allows my clients to take the lead and discover their own solutions. I act as a compassionate facilitator, listening without judgement and providing encouraging support.</p>
         <a href="#book" class="btn book-btn">Book a Free Consultation</a>
