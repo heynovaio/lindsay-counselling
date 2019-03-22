@@ -212,7 +212,7 @@
 // I can help section
 .how-section {
   .box-container {
-    max-width: 700px;
+    max-width: 720px;
     text-align: center;
 
     h2 {
@@ -295,7 +295,7 @@
   padding: 40px 0;
 
   @media (min-width: $sm) {
-    background: url("./images/servicelist-title-img.jpg") no-repeat;
+    background: url("../images/servicelist-title-img.jpg") no-repeat;
     background-repeat: no-repeat;
     background-position: center 110px;
     background-size: contain;

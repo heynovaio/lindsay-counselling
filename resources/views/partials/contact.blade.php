@@ -9,9 +9,7 @@
     <div class="grid contact-info">
       <img src="../assets/images/feather.png" alt="">
       <div class="form-container">
-        <form class="" action="index.html" method="post">
-          <?php echo do_shortcode(  '[contact-form-7 id="63" title="Contact form 1"]'); ?>
-        </form>
+        <?php echo do_shortcode(  '[contact-form-7 id="63" title="Contact form 1"]'); ?>
       </div>
       <div class="contact-info-container">
         <div class="contact-details">
@@ -30,7 +28,7 @@
           <i class="fas fa-envelope"></i>
           <a href="mailto:Lindsay.trowell@gmail.com">Lindsay.trowell@gmail.com</a>
         </div>
-        <a href="../assets/intake-form.pdf" class="btn"><i class="fas fa-download"></i>Download intake form</a>
+        <a href="http://www.lindsaytrowell.com/wp-content/themes/counselling/dist/self-care_c01a9cc3.pdf" class="btn"><i class="fas fa-download"></i>Download Self Care Assessment</a>
       </div>
     </div>
   </div>

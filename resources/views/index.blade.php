@@ -8,7 +8,7 @@
       <div class="heading-text grid-item">
         <p class="title">Counsellor and Parenting Specialist</p>
         <h1>Creating Calm Within the Chaos</h1>
-        <p>Healping parents, caregivers, and service providers stay calm, connected and in control</p>
+        <p>Helping parents, caregivers, and service providers stay calm, connected and in control</p>
         <a href="#book" class="btn book-btn">Book a Free Consult</a>
       </div>
       <div class="grid-item bird-img">
