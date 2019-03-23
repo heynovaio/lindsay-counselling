@@ -42,15 +42,105 @@
   </div>
 </section>
 
+<section class="i-can-help-section services-section">
+  <div class="container">
+    <div class="grid">
+      <div class="services-heading">
+        <h2>I Can Help</h2>
+        <p>Are you feeling overwhelmed, frustrated and at the end of your rope?</p>
+        <p>Bust the Myths of what Parenting, Caregiving or Services “should look like”. The Truth may lie far from these Myths.</p>
+        <p class="sub-heading"><strong>If you are struggling with any of the issues below, counselling can help you feel better.</strong></p>
+      </div>
+    </div>
+
+     <div class="grid services-grid">
+        <div class="services-box box-1">
+          <h3>Parents</h3>
+          <ul>
+            <li>Exhausted</li>
+            <li>Overwhelmed</li>
+            <li>Frustrated</li>
+            <li>Crying in the bathroom</li>
+            <li>Defeated</li>
+            <li>Anxious</li>
+            <li>Feeling helpless</li>
+            <li>Isolated</li>
+          </ul>
+          <a href="{{ home_url('/') }}services/parents/" class="btn">View Parents</a>
+        </div>
+
+        <div class="services-box box-4">
+          <h3>Indigenous Perspectives</h3>
+          <ul>
+            <li>Lack of connection to culture</li>
+            <li>Need spiritual guidance using indigenous perspectives</li>
+            <li>Need understanding around intergenerational trauma</li>
+            <li>Need more understanding of culture to support a child in your care</li>
+            <li>Require a knowledge keeper to address your organization</li>
+          </ul>
+          <a href="{{ home_url('/') }}services/indigenous-perspectives/" class="btn">View Indigenous Perspectives</a>
+        </div>
+
+        <div class="services-box box-2">
+          <h3>Caregivers</h3>
+          <ul>
+            <li>Unsupported</li>
+            <li>Ran Rugged</li>
+            <li>Undervalued</li>
+            <li>Experienced grief/loss</li>
+            <li>Unattached</li>
+            <li>Taken advantage of</li>
+            <li>Angry</li>
+          </ul>
+          <a href="{{ home_url('/') }}services/caregivers/" class="btn">View Cargivers</a>
+        </div>
+
+        <div class="services-box box-3">
+          <h3>Service Providers</h3>
+          <ul>
+            <li>Burnt out</li>
+            <li>Taking work stress home</li>
+            <li>Having nightmares</li>
+            <li>Snapping at your spouse</li>
+            <li>Loss of passion</li>
+            <li>Frustrated with systems</li>
+            <li>Supports don’t get it</li>
+          </ul>
+          <a href="{{ home_url('/') }}services/service-providers/" class="btn">View Service Providers</a>
+        </div>
+
+      </div>
+  </div>
+
+</section>
+
 <section class="how-section">
   <div class="container">
     <div class="grid">
       <div class="box-container">
-        <h2>I Can Help</h2>
-        <p>Are you feeling exhausted, unsupported, and undervalued? Or perhaps you find yourself snapping at family members, drinking too much or losing sleep?</p>
-        <p>With my guidance, we can work together to help you feel calm, experience a strong connection with your family, improve your ability to control your big emotions, and give you a greater sense of confidence in your skills.</p>
-        <p>I provide a safe and relaxing space for families, caregivers, and service providers to establish a supportive and trusting therapeutic relationship.</p>
-        <p>My counselling approach is person-centered; a  strengths-based approach that allows my clients to take the lead and discover their own solutions. I act as a compassionate facilitator, listening without judgement and providing encouraging support.</p>
+        <h2>Feel more Calm, Connected, and in Control</h2>
+        <p>My Counselling or programs can help you feel more confident in your skills and provide a sounding board for your concerns and discover how to create Calm within the Chaos</p>
+        <div class="how-lists grid">
+
+          <div class="how-list how-list-1">
+            <h3>You Will Be</h3>
+            <ul>
+              <li>More patient</li>
+              <li>More energetic</li>
+              <li>More understanding</li>
+            </ul>
+          </div>
+
+          <div class="how-list">
+            <h3>You Will Have</h3>
+            <ul>
+              <li>Better communication</li>
+              <li>Better connections</li>
+              <li>Better skills</li>
+            </ul>
+          </div>
+        </div>
+
         <a href="#book" class="btn book-btn">Book a Free Consultation</a>
       </div>
     </div>
@@ -114,7 +204,6 @@
             <li>Police, fire, & ambulance professionals</li>
             <li>Nurses & social workers</li>
             <li>Military personnel</li>
-            <li>Teachers & education assistants</li>
           </ul>
           <a href="{{ home_url('/') }}services/service-providers/" class="btn">View Service Providers</a>
         </div>
